@@ -5,39 +5,39 @@ usuario introduce en el formulario de registro.
 Si hay algun fallo impide que 
 el usuario pueda seguir con el registro.
 """
-from users.models import User
 from django import forms
 from django.utils.translation import ugettext_lazy as _
-
+from users.models import CustomUser
 
 class RegistrationForm(forms.Form):
-    """ Clase que almacena los metodos que se
-	encargan de la validacion de los datos
-    del formulario de registro."""
+
+    """ Clase que almacena los metodos que se encargan de la validacion de los datos el formulario de registro."""
     required_css_class = 'required'
     username = forms.RegexField(regex=r'^[\w.@+-]+$', max_length=30, label=_("Username"),
                                 error_messages={'invalid': _("Use solo leras.")})
+    pseudo = forms.CharField(widget=forms.PasswordInput, label=_("Password"))
+
     email = forms.EmailField(label=_("E-mail"))
     password1 = forms.CharField(widget=forms.PasswordInput, label=_("Password"))
     password2 = forms.CharField(widget=forms.PasswordInput, label=_("Password (again)"))
 
     def clean_username(self):
         """ Valida el nombre de usuario """
-        existing = User.objects.filter(username__iexact=self.cleaned_data['username'])
+        existing = CustomUser.objects.filter(username__iexact=self.cleaned_data['username'])
         if existing.exists():
             raise forms.ValidationError(_("Ya existe ese nombre de ususario."))
         else:
             return self.cleaned_data['username']
 
     def clean(self):
-        """ Valida las contraseñas """
+        """ Valida las contrasenas """
         if self.cleaned_data['password1'] != self.cleaned_data['password2']:
-            raise forms.ValidationError(_("Las contraseñas deben coincidir."))
+            raise forms.ValidationError(_("Las contrasenas deben coincidir."))
         return self.cleaned_data
 
     def clean_email(self):
         """ Valida el e-mail """
-        existing = User.objects.filter(email__iexact=self.cleaned_data['email'])
+        existing = CustomUser.objects.filter(email__iexact=self.cleaned_data['email'])
         if existing.exists():
             raise forms.ValidationError(_("Ya hay un usuario con ese mail."))
         else:

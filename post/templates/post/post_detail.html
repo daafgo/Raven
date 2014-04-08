@@ -1,0 +1,12 @@
+{% extends "post/post_list.html" %}
+
+{% block content %}
+        <p>{{ post.body}}</p>
+        <p>Creado por: {{ post.creator }} a las: {{ post.created }}</p>
+        <button>retweet</button><button>favorito</button>
+{% endblock %}
+
+{% block actions %}
+    <li><a href="{% url "post_delete" post.id %}">Eliminar post</a></li>
+{% endblock %}
+

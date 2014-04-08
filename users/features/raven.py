@@ -87,4 +87,3 @@ def seguir_a_un_usuario(step, nombre1, email1, password1, nombre2, email2, passw
     user2.delete()
 
     assert seguido == "true"
-    

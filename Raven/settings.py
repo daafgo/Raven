@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'post',
     'users',
+    'bootstrap3'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,3 +85,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.CustomUser'
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'users/templates'),)

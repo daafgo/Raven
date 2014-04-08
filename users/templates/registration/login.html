@@ -1,0 +1,10 @@
+{% extends "post/post_list.html" %}
+{% load bootstrap3 %}
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit">Login</button>
+        <input type="hidden" name="next" value="/" />
+    </form>
+{% endblock %}
