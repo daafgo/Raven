@@ -1,17 +1,17 @@
 from django.db import models
-from users.models import User
+from users.models import CustomUser
 from django.contrib import admin
 
 class Reply(models.Model):
 	body = models.TextField(max_length=155)
 	created = models.DateTimeField(auto_now_add=True)
-	creator = models.ForeignKey(User)
+	creator = models.ForeignKey(CustomUser)
 
 
 class Post(models.Model):
 	body = models.TextField(max_length=155)
 	created = models.DateTimeField(auto_now_add=True)
-	creator = models.ForeignKey(User)
+	creator = models.ForeignKey(CustomUser)
 	reply = models.ManyToManyField(Reply)
     
 
