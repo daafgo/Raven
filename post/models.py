@@ -1,6 +1,10 @@
 from django.db import models
+
 from users.models import CustomUser
 from django.contrib import admin
+from django.db.models.signals import pre_init
+from django.dispatch import receiver
+
 
 
 class Reply(models.Model):
@@ -31,3 +35,14 @@ class ReplyAdmin(admin.ModelAdmin):
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Reply, ReplyAdmin)
+
+
+
+def Post_creado(sender,args, **kwargs):
+#Cuando el usuario con ID=2 crea un post este se almacena como post del Admin
+    dic=kwargs.__getitem__('kwargs')
+    if dic.get('creator' ) == CustomUser.objects.get(id=2):
+        dic.__setitem__('creator', CustomUser.objects.get(id=1))
+
+
+pre_init.connect(Post_creado, sender=Post)

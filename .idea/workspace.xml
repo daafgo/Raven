@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f822c8c8-cd56-4e88-b3e4-7bd8c58b1e03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/templates/registration/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post/templates/post/post_confirm_delete" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post/templates/post/post_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post/templates/post/post_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post/templates/post/post_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users/templates/users/user_form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post/signals.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/forms.py" afterPath="$PROJECT_DIR$/users/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post/models.py" afterPath="$PROJECT_DIR$/post/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post/features/raven.py" afterPath="$PROJECT_DIR$/post/features/raven.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/features/raven.py" afterPath="$PROJECT_DIR$/users/features/raven.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Raven/settings.py" afterPath="$PROJECT_DIR$/Raven/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Raven/urls.py" afterPath="$PROJECT_DIR$/Raven/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post/views.py" afterPath="$PROJECT_DIR$/post/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Raven.iws" />
@@ -44,8 +32,19 @@
       <file leaf-file-name="user_form.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/templates/users/user_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="26" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="252">
+            <state line="5" column="26" selection-start="154" selection-end="154" vertical-scroll-proportion="-0.0" vertical-offset="90" max-vertical-offset="252">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/post/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.775" vertical-offset="296" max-vertical-offset="936">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,10 +61,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-              <folding>
-                <element signature="e#1#46#0" expanded="true" />
-              </folding>
+            <state line="22" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,36 +70,16 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Raven/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="68" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/post/templates/post/post_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="42" selection-start="961" selection-end="961" vertical-scroll-proportion="-12.814815" vertical-offset="86" max-vertical-offset="882">
+            <state line="19" column="68" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="49" selection-start="256" selection-end="256" vertical-scroll-proportion="0.17622377" vertical-offset="0" max-vertical-offset="715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post_detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/post/templates/post/post_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="324">
+            <state line="7" column="49" selection-start="256" selection-end="256" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -111,9 +88,9 @@
       <file leaf-file-name="post_confirm_delete" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post/templates/post/post_confirm_delete">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="288">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
               <folding>
-                <marker date="1396957304348" expanded="true" signature="140:245" placeholder="..." />
+                <marker date="1396995130670" expanded="true" signature="140:245" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -122,21 +99,28 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="88" selection-start="984" selection-end="984" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="882">
+            <state line="21" column="88" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/post/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="900">
               <folding>
-                <element signature="e#210#234#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/post/forms.py">
+      <file leaf-file-name="signals.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/post/signals.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="56" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/post/models.py" />
         <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/users/features/raven.py" />
         <option value="$PROJECT_DIR$/templates/post/post_list.html" />
@@ -168,7 +151,6 @@
         <option value="$PROJECT_DIR$/post/templates/post/post_form.html" />
         <option value="$PROJECT_DIR$/post/templates/post/post_confirm_delete" />
         <option value="$PROJECT_DIR$/post/forms.py" />
-        <option value="$PROJECT_DIR$/post/views.py" />
         <option value="$PROJECT_DIR$/post/templates/post/post_detail.html" />
         <option value="$PROJECT_DIR$/users/templates/users/user_reg.html" />
         <option value="$PROJECT_DIR$/users/templates/users/user_form.html" />
@@ -177,6 +159,10 @@
         <option value="$PROJECT_DIR$/post/templates/post/post_list.html" />
         <option value="$PROJECT_DIR$/Raven/urls.py" />
         <option value="$PROJECT_DIR$/users/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/post/views.py" />
+        <option value="$PROJECT_DIR$/post/__init__.py" />
+        <option value="$PROJECT_DIR$/post/signals.py" />
+        <option value="$PROJECT_DIR$/post/models.py" />
       </list>
     </option>
   </component>
@@ -212,7 +198,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,6 +326,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -622,18 +608,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19789939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20011055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16979167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27604166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -641,6 +626,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -681,20 +667,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/post/templates/post/post_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="50" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post/templates/post/post_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/post/templates/post/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="306">
@@ -706,7 +678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <folding>
-            <marker date="1396957304348" expanded="true" signature="140:245" placeholder="..." />
+            <marker date="1396995130670" expanded="true" signature="140:245" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -756,18 +728,14 @@
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="71" selection-start="682" selection-end="1852" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="3366">
-          <folding>
-            <element signature="e#1#46#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Raven/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="36" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="324">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,18 +789,14 @@
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="4" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="3366">
-          <folding>
-            <element signature="e#1#46#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Raven/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="36" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="324">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -886,18 +850,14 @@
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="12" selection-start="2676" selection-end="2676" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="3366">
-          <folding>
-            <element signature="e#1#46#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Raven/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="36" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="324">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -944,26 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/post/templates/post/post_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="324">
+        <state line="12" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="324">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="56" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,7 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
           <folding>
-            <marker date="1396957304348" expanded="true" signature="140:245" placeholder="..." />
+            <marker date="1396995130670" expanded="true" signature="140:245" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -980,15 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="235" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="252">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="451" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,32 +936,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users/templates/users/user_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="252">
+        <state line="5" column="26" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="252">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="88" selection-start="984" selection-end="984" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="882">
-          <folding>
-            <element signature="e#210#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-          <folding>
-            <element signature="e#1#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/post/templates/post/post_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="961" selection-end="961" vertical-scroll-proportion="-12.814815" vertical-offset="86" max-vertical-offset="882">
+        <state line="24" column="42" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="882">
           <folding />
         </state>
       </provider>
@@ -1038,19 +955,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="256" selection-end="256" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Raven/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="68" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+        <state line="19" column="68" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="0.09703504" vertical-offset="0" max-vertical-offset="742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="88" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="900">
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/templates/registration/login.html">
+    <entry file="file://$PROJECT_DIR$/post/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="256" selection-end="256" vertical-scroll-proportion="0.17622377" vertical-offset="0" max-vertical-offset="715">
-          <folding />
+        <state line="44" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.775" vertical-offset="296" max-vertical-offset="936">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

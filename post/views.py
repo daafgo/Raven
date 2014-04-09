@@ -3,6 +3,7 @@ from post.forms import PostForm
 import datetime
 from django.shortcuts import redirect, render
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
+
 def new_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
